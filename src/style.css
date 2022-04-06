@@ -66,6 +66,10 @@ main {
   border: 0.1em solid black;
 }
 
+.left .list .listItem {
+  padding: 0.1em;
+}
+
 .right .add {
   display: flex;
   flex-direction: column;

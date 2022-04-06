@@ -14,5 +14,14 @@ class Leaderboard {
   };
 }
 
-const initializer = new Leaderboard([]);
+const startingData = [
+  'Micheal: 22',
+  'Hulk: 23',
+  'Jaden: 24',
+  'Pharell: 25',
+  'Jake: 26',
+  'Solomon: 27',
+  'Drake: 28',
+];
+const initializer = new Leaderboard(startingData);
 initializer.render();

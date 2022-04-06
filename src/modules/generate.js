@@ -3,11 +3,12 @@
 const add = (tasks) => {
   const container = document.querySelector('.list');
   if (container.children[0]) container.innerHTML = '';
-  tasks.forEach((task) => {
+  tasks.forEach((task, i) => {
     const taskEl = `
-    <li>${task}</li>`;
+    <li class="listItem">${task}</li>`;
 
     container.innerHTML += taskEl;
+    if (i % 2 !== 0) container.children[i].style.background = '#DFDFDE';
   });
 };
 

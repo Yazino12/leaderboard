@@ -6,5 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard list app</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <main>
+      <div class="left">
+        <div class="header">
+          <h3>Recent scores</h3>
+          <a class="refresh">Refresh</a>
+        </div>
+        <ul class="list"></ul>
+      </div>
+      <div class="right">
+        <h3>Add your score</h3>
+        <form class="add" method="post" action="/">
+          <div>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              maxlength="30"
+              placeholder="Your name"
+            />
+            <label for="name" hidden></label>
+            <input
+              name="score"
+              id="score"
+              type="number"
+              min="0"
+              max="100"
+              placeholder="Your score"
+            />
+            <label for="score" hidden></label>
+          </div>
+          <div class="button-wrapper">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

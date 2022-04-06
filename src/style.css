@@ -1,5 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 body {
+  font-family: sans-serif, serif, 'cursive';
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-width: 210px;
+}
+
+h1 {
+  font-family: 'Rubik Moonrocks', 'cursive', sans-serif;
+}
+
+ul,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  padding: 1em;
+  background-color: whitesmoke;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 1em;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.left .header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.left .header a {
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 0.2em solid black;
+  padding: 0.1em;
+}
+
+.left .list {
+  border: 0.1em solid black;
+}
+
+.right .add {
+  display: flex;
+  flex-direction: column;
+}
+
+.right .add input {
+  display: block;
+  margin-bottom: 1em;
+  width: 150px;
+}
+
+.right .add .button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right .add .button-wrapper button {
+  background-color: transparent;
+  border: 0.1em solid black;
+  width: 70px;
 }

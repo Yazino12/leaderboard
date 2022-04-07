@@ -1,13 +1,18 @@
-const formAction = (listArray) => {
+import Game from './generate.js';
+
+const formAction = () => {
   const form = document.querySelector('.add');
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const [name, score] = form.elements;
-    if (name.value.trim() && score.value) {
-      const data = `${name.value.trim()}: ${score.value}`;
-      listArray.push(data);
+    const [name, userScore] = form.elements;
+    if (name.value.trim() && userScore.value) {
+      const data = {
+        user: name.value,
+        score: userScore.value,
+      };
+      await Game.addGame(data);
       name.value = '';
-      score.value = '';
+      userScore.value = '';
     }
   });
 };

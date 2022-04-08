@@ -8,7 +8,7 @@
   Demo 📝
 </h2>
 
-<img src="https://github.com/Yazino12/leaderboard/blob/develop/src/assets/demo.png?raw=true" width="1228" height="530">
+<img src="https://github.com/Yazino12/leaderboard/blob/develop/src/assets/demo.png?raw=true" width="1228" height="430">
 
 ## Built With
 

@@ -8,7 +8,7 @@
   Demo 📝
 </h2>
 
-<img src="https://github.com/Yazino12/leaderboard/blob/develop/src/assets/demo.png?raw=true" width="1228" height="630">
+<img src="https://github.com/Yazino12/leaderboard/blob/develop/src/assets/demo.png?raw=true" width="1228" height="530">
 
 ## Built With
 
@@ -30,7 +30,8 @@ To get a local copy up and running follow these setup steps.
 **Install**
 
 - On your terminal run : `npm i`
-- To start webpack-dev-server and run locally : `npm start`
+- For Webpack to build and bundle the app files : `npm run build`
+- For Webpack to start the development server : `npm run start`
 - In case you run into any errors please raise an [issue](https://github.com/Yazino12/leaderboard/issues).
 
 **Usage**

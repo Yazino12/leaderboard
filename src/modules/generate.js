@@ -67,7 +67,7 @@ export default class Game {
         <li class="listItem">${task.user}: ${task.score}</li>`;
 
         container.innerHTML += taskEl;
-        if (i % 2 !== 0) container.children[i].style.background = '#DFDFDE';
+        if (i % 2 !== 0) container.children[i].style.background = 'whitesmoke';
       });
     });
   };

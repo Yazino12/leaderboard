@@ -5,11 +5,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-width: 210px;
-}
-
-h1 {
-  font-family: 'Rubik Moonrocks', 'cursive', sans-serif;
+  min-width: 300px;
+  background-color: whitesmoke;
+  color: #5f7464;
 }
 
 ul,
@@ -17,6 +15,17 @@ h1,
 h3 {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-family: 'Rubik Moonrocks', 'cursive', sans-serif;
+  color: #e4aec5;
+  transition: transform 2s;
+}
+
+h1:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 a,
@@ -31,7 +40,8 @@ li {
 header {
   display: flex;
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: #fad9e6;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
 }
 
 main {
@@ -47,47 +57,81 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+  background-color: #fad9e6;
+  padding: 2em;
+  border-radius: 2em 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 }
 
 .left .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
 }
 
-.left .header a {
+.left .header a,
+.right .add .button-wrapper button {
   font-size: 0.8em;
   font-weight: bold;
-  border: 0.2em solid black;
-  padding: 0.1em;
+  background-color: #e4aec5;
+  border-style: none;
+  border-radius: 2em 1em;
+  padding: 1em;
+  color: #5f7464;
+  transition: border-radius 1s;
+}
+
+.left .header a:hover,
+.right .add .button-wrapper button:hover {
+  color: #243d25;
+  border-radius: 1em 0.5em;
 }
 
 .left .list {
-  border: 0.1em solid black;
+  overflow-y: auto;
+  border: 0.1em solid #e4aec5;
+  max-height: 150px;
+}
+
+/* width */
+.left .list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.left .list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.left .list::-webkit-scrollbar-thumb {
+  background: #e4aec5;
+  border-radius: 1em;
 }
 
 .left .list .listItem {
   padding: 0.1em;
 }
 
-.right .add {
+.right .add,
+.right .add div {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
-.right .add input {
-  display: block;
-  margin-bottom: 1em;
-  width: 150px;
+.right .add div input {
+  border-style: none;
+  padding: 0.3em;
+  background-color: whitesmoke;
 }
 
 .right .add .button-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-}
-
-.right .add .button-wrapper button {
-  background-color: transparent;
-  border: 0.1em solid black;
-  width: 70px;
 }
